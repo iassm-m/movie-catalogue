@@ -31,7 +31,9 @@ Ele permite pesquisar títulos, favoritar filmes e avaliar cada favorito com est
 ┣ 📄 style.css         - Estilos visuais
 ┣ 📄 script.js         - Lógica da busca e favoritos
 ┣ 📄 favoritos.js      - Lógica da página de favoritos
+┗ 📄 favicon.ico       - Ícone 
 ┗ 📄 README.md         - Documentação do projeto
+
 `````
 
 ---
