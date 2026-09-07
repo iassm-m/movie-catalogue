@@ -44,3 +44,9 @@ Ele permite pesquisar títulos, favoritar filmes e avaliar cada favorito com est
 2. Abra o arquivo index.html no navegador.
 
 3. Pesquise filmes, favorite e avalie seus favoritos.
+
+## 🌐 Acesse o projeto online
+O catálogo de filmes está disponível gratuitamente pelo GitHub Pages:
+
+🔗 [Movie Catalogue](https://iassm-m.github.io/movie-catalogue/)
+
