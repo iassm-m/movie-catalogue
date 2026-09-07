@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;   /* Define a fonte padrão da página */
+  background: #7d5980;              /* Cor de fundo roxa */
+  color:#fff;                       /* Cor do texto em branco */
+  margin: 0;                        /* Remove margens externas do body */
+  padding: 20;                      /* Espaçamento interno (faltou px, deveria ser 20px) */
+  text-align: center;               /* Centraliza textos por padrão */
+  padding: 20px;                    /* Espaçamento interno corrigido */
+}
+
+h1 {
+  text-align: center;               /* Centraliza o título */
+  margin-bottom: 20px;              /* Espaço abaixo do título */
+}
+
+#favoritesContainer, #movieContainer {
+  display: flex;                    /* Exibe os filmes em linha flexível */
+  flex-wrap: wrap;                  /* Permite quebrar linha quando não couber */
+  justify-content: center;          /* Centraliza os filmes no container */
+}
+
+
+.movie {
+  background: #d480c6;              /* Fundo rosa claro para cada card */
+  border-radius: 10px;              /* Bordas arredondadas */
+  margin: 15px;                     /* Espaço externo entre cards */
+  padding: 10px;                    /* Espaço interno do card */
+  width: 220px;                     /* Largura fixa do card */
+  transition: transform 0.2s;       /* Animação suave ao aplicar transform */
+  position: relative;               /* Permite posicionar elementos relativos ao card */
+}
+
+
+.movie:hover {
+  transform: scale(1.05);           /* Aumenta levemente o card ao passar o mouse */
+  cursor: pointer;                  /* Mostra cursor de clique */
+}
+
+.movie img {
+  width: 100%;                      /* Imagem ocupa toda a largura do card */
+  border-radius: 10px;              /* Bordas arredondadas na imagem */
+  cursor: pointer;                  /* Cursor de clique na imagem */
+}
+
+#movieDetails {
+  background: #d480c6;              /* Fundo rosa claro para detalhes */
+  border-radius: 10px;              /* Bordas arredondadas */
+  margin: 15px auto;                /* Espaço externo e centralização */
+  padding: 20px;                    /* Espaço interno */
+  width: 80%;                       /* Ocupa 80% da largura da tela */
+  max-width: 600px;                 /* Limite máximo de largura */
+}
+
+button {
+  background: #a71278;              /* Fundo roxo escuro */
+  color: #fff;                      /* Texto branco */
+  border: none;                     /* Remove borda padrão */
+  padding: 8px 12px;                /* Espaçamento interno */
+  border-radius: 5px;               /* Bordas arredondadas */
+  margin-top: 10px;                 /* Espaço acima do botão */
+  cursor: pointer;                  /* Cursor de clique */
+}
+
+
+button:hover {
+  background: #b33d70;              /* Muda cor ao passar o mouse */
+}
+
+
+/*Descrição para quando passar o mouse sobre o filme*/
+.movie p {
+  display: block;                   /* Exibe parágrafos normalmente */
+  margin-top: 10px;                 /* Espaço acima do texto */
+  font-size: 14px;                  /* Tamanho da fonte */
+  color:#ccc;                       /* Cor cinza clara */
+}
+
+
+.movie:hover p {
+  display: block;                   /* Garante que o texto apareça ao passar o mouse */
+}
+
+.rating {
+  margin-top: 10px;                 /* Espaço acima da área de estrelas */
+  font-size: 22px;                  /* Tamanho das estrelas */
+}
+
+
+.star {
+  margin: 0 3px;                    /* Espaço entre estrelas */
+  cursor: pointer;                  /* Cursor de clique */
+  color: #ccc;                      /* Cor cinza padrão */
+  transition: transform 0.2s, color 0.3s; /* Animação suave ao mudar cor/tamanho */
+}
+
+
+.star:hover {
+  transform: scale(1.3);            /* Aumenta estrela ao passar o mouse */
+  color: gold;                      /* Fica dourada no hover */
+}
+
+
+.star.active {
+  color: gold;                      /* Estrela clicada fica dourada permanentemente */
+}
+
+
+/* Rodapé */
+footer {
+  margin-top: 40px;                 /* Espaço acima do rodapé */
+  padding: 15px;                    /* Espaçamento interno */
+  background: #5a3d5f;              /* Fundo roxo escuro */
+  color: #fff;                      /* Texto branco */
+  text-align: center;               /* Centraliza texto */
+  border-radius: 10px;              /* Bordas arredondadas */
+  font-size: 14px;                  /* Fonte menor */
+}
+
+.rating span {
+  margin: 0 2px;                    /* Espaço entre cada estrela */
+}
+
+
+.titulo-favoritos {
+  display: flex;                    /* Exibe título e botão lado a lado */
+  justify-content: center;          /* Centraliza horizontalmente */
+  align-items: center;              /* Alinha verticalmente */
+  gap: 20px;                        /* Espaço entre título e botão */
+}
+
+.titulo-favoritos button {
+  background: #a71278;              /* Fundo roxo escuro */
+  color: #fff;                      /* Texto branco */
+  border: none;                     /* Remove borda padrão */
+  padding: 10px 12px;               /* Espaçamento interno */
+  border-radius: 10px;              /* Bordas arredondadas */
+  cursor: pointer;                  /* Cursor de clique */
+  font-size: 14px;                  /* Fonte do botão */
+}
+
+
+.titulo-favoritos button:hover {
+  background: #b33d70;              /* Cor diferente no hover */
+}
+
+
+.banner-titulo {
+  display: flex;                    /* Exibe título e botão lado a lado */
+  justify-content: center;          /* Centraliza horizontalmente */
+  align-items: center;              /* Alinha verticalmente */
+  gap: 20px;                        /* Espaço entre título e botão */
+  background: linear-gradient(90deg, #5b1746, #eb61d4); /* Banner com gradiente */
+  padding: 15px;                    /* Espaçamento interno */
+  border-radius: 10px;              /* Bordas arredondadas */
+  margin-bottom: 20px;              /* Espaço abaixo do banner */
+  color: #ffffff;                   /* Texto branco */
+}
+
+
+.banner-titulo h1 {
+  margin: 0;
+  font-size: 45px;       /* aumenta bastante o tamanho */
+  font-weight: bold;     /* deixa mais forte */
+  letter-spacing: 3px;   /* espaçamento entre letras */
+  text-shadow: 3px 3px 8px #1a020c; /* sombra mais marcada */
+}
+
+
+.banner-titulo button {
+  background: #f9f9f9;                 /* Fundo botão Retornar ao inicio */
+  color: #d83782;                   /* Texto roxo */
+  border: none;                     /* Remove borda padrão */
+  padding: 8px 12px;                /* Espaçamento interno */
+  border-radius: 5px;               /* Bordas arredondadas */
+  cursor: pointer;                  /* Cursor de clique */
+  font-weight: bold;                /* Texto em negrito */
+}
+
+
+.banner-titulo button:hover {
+  background: #f0f0f0;              /* Fundo cinza claro no hover */
+}

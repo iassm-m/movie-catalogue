@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <h1>Meu Catálogo de Filmes</h1>
+
+<input type="text" id="searchInput" placeholder="Pesquisar filme...">
+<button onclick="searchMovie()">Buscar título exato</button>
+<button onclick="searchMovies()">Buscar lista</button/>
+<button onclick="window.location.href='favoritos.html'">Meus Favoritos</button>
+
+
+<div id="movieContainer"></div>
+<div id="movieDetail"></div>
+<div id="favoritesContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
