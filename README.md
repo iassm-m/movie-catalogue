@@ -56,7 +56,7 @@ O catálogo de filmes está disponível gratuitamente pelo GitHub Pages:
 ## 🖤 Créditos
 
 ```plaintext
-Feito com ❤️ por Iasmim Mann
+Feito por Iasmim Mann
 ```
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-2ECC71?logo=github&logoColor=white)
 ![Deploy GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-327FC7?logo=github&logoColor=white)
